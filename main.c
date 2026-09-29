@@ -2,16 +2,15 @@
 
 int main(void)
 {
-    int a, b;
+    int total_sec, min, sec;
     
-    printf("Input two integers: ");
-    scanf("%i %i", &a, &b);
+    printf("input the second: ");
+    scanf("%i", &total_sec);
     
-    printf("+ result is %d\n", a + b);
-    printf("- result is %d\n", a - b);
-    printf("* result is %d\n", a * b);
-    printf("/ result is %d\n", a / b);
-    printf("%% result is %d\n", a % b); 
+    min = total_sec / 60;   
+    sec = total_sec % 60;   
+    
+    printf("the time is %d:%d\n", min, sec);
     
     return 0;
 }
