@@ -1,19 +1,17 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) 
+int main(void)
 {
-    int x, y, z, m;
-    int a, b, c;
+    int a, b;
     
-    x = 2;
-    z = 1;
-    a = 3;
-    b = 4;
-    c = 5;
+    printf("Input two integers: ");
+    scanf("%i %i", &a, &b);
     
-    y = a * x * x + b * x + c;
-    m = (x + y + z) / 3;
+    printf("+ result is %d\n", a + b);
+    printf("- result is %d\n", a - b);
+    printf("* result is %d\n", a * b);
+    printf("/ result is %d\n", a / b);
+    printf("%% result is %d\n", a % b); 
     
-    printf("y = %d, m = %d\n", y, m);
-    
+    return 0;
 }
